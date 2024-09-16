@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(
+    123.22% 129.67% at 100.89% -5.6%,
+    #201d47 0%,
+    #17153a 100%
+  );
+  color: #fff;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1b1a2e;
+}
+.card {
+  background-color: #2a2948;
+}
+.notification-card {
+  background-color: #2a2948;
+}
+.chart {
+  background-color: #1b1a2e;
+}
+.wallet-card {
+  background-color: #2a2948;
+}
+.history-card {
+  background-color: #2a2948;
+}

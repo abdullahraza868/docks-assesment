@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./assets/fonts/helvetica-neue/HelveticaNeueMedium.otf")
+    format("truetype"); /* Adjust the path as necessary */
+  font-weight: normal;
+  font-style: normal;
+}
