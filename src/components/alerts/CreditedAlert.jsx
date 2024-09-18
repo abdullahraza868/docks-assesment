@@ -6,8 +6,10 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
+import { useState } from "react";
 
 const CreditedAlert = () => {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <Card
       sx={{
@@ -20,6 +22,7 @@ const CreditedAlert = () => {
           "linear-gradient(241.25deg, rgba(41, 39, 85, 0.35) 4.4%, rgba(41, 39, 84, 0.78) 61.77%, rgba(27, 24, 66, 0.35) 119.94%)",
         color: "#6968A6",
         borderRadius: 3,
+        display: isOpen ? "auto" : "none",
       }}
     >
       <CardContent
@@ -58,6 +61,7 @@ const CreditedAlert = () => {
             textTransform: "capitalize",
             fontSize: "small",
           }}
+          onClick={() => setIsOpen(false)}
         >
           Dismiss
         </Button>

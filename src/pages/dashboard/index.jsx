@@ -5,6 +5,8 @@ import WalletCard from "../../components/cards/WalletCard";
 import Grid from "@mui/material/Grid2";
 import CreditedAlert from "../../components/alerts/CreditedAlert";
 import CredAlert from "../../components/alerts/CredAlert";
+import HistoryCard from "../../components/cards/HistoryCard";
+import StatsCard from "../../components/cards/StatsCard";
 
 const statsData = [
   {
@@ -27,6 +29,37 @@ const statsData = [
   },
 ];
 
+const data = [
+  {
+    id: 1,
+    value: "1.9678",
+    type1: "BTC",
+    type2: "USD",
+    change: "-5.23",
+  },
+  {
+    id: 2,
+    value: "465,22",
+    type1: "ETH",
+    type2: "USD",
+    change: "+132",
+  },
+  {
+    id: 3,
+    value: "104,23",
+    type1: "LTC",
+    type2: "USD",
+    change: "+75",
+  },
+  {
+    id: 4,
+    value: "107.543,234",
+    type1: "LTC",
+    type2: "IDR",
+    change: "+132",
+  },
+];
+
 const Dashboard = () => {
   return (
     <>
@@ -45,6 +78,21 @@ const Dashboard = () => {
                 </Grid>
               ))}
             </Grid>
+          </Box>
+
+          <Box spacing={1} mt={3} display="flex" width="100%">
+            <Box width="70%">
+              <Grid container spacing={1}>
+                {data?.map((history) => (
+                  <Grid item xs={6} sm={4} md={3} key={history.id}>
+                    <StatsCard stats={history} />
+                  </Grid>
+                ))}
+              </Grid>
+            </Box>
+            <Box width="30%">
+              <HistoryCard />
+            </Box>
           </Box>
         </Box>
       </Box>

@@ -11,7 +11,6 @@ import {
   Popover,
   Typography,
 } from "@mui/material";
-import React from "react";
 
 const notifications = [
   {
@@ -67,8 +66,6 @@ const NotificationsPopover = ({ anchorEl, setAnchorEl }) => {
       slotProps={{
         paper: {
           borderRadius: 30,
-          background:
-            "linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #17163B 100%)",
         },
         root: {
           boxShadow: "0px 48px 69px 0px rgba(23, 18, 43, 0.85)",
@@ -83,7 +80,7 @@ const NotificationsPopover = ({ anchorEl, setAnchorEl }) => {
           display: "flex",
           flexDirection: "column",
           background:
-            "linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #17163B 100%)",
+            "linear-gradient(1deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 10%, #17163B 100%)",
           width: "100%",
         }}
       >

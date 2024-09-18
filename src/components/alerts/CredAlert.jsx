@@ -1,14 +1,17 @@
 import { Alert, Box, Typography } from "@mui/material";
+import { useState } from "react";
 
 const CredAlert = () => {
   return (
     <Alert
       icon={
-        <img
-          src="src/assets/icons/LiteCoinRoundedIcon.png"
-          width={25}
-          height={25}
-        />
+        <Box>
+          <img
+            src="src/assets/icons/LiteCoinRoundedIcon.png"
+            width={25}
+            height={25}
+          />
+        </Box>
       }
       severity="success"
       action={
