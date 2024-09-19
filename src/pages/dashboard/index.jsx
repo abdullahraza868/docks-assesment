@@ -7,6 +7,7 @@ import CreditedAlert from "../../components/alerts/CreditedAlert";
 import CredAlert from "../../components/alerts/CredAlert";
 import HistoryCard from "../../components/cards/HistoryCard";
 import StatsCard from "../../components/cards/StatsCard";
+import Chart from "../../components/charts/Chart";
 
 const statsData = [
   {
@@ -78,6 +79,10 @@ const Dashboard = () => {
                 </Grid>
               ))}
             </Grid>
+          </Box>
+
+          <Box mt={4}>
+            <Chart />
           </Box>
 
           <Box spacing={1} mt={3} display="flex" width="100%">

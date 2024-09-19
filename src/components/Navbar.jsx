@@ -74,7 +74,7 @@ const Navbar = () => {
         With all of the styling tool options available in today’s market
       </Typography>
 
-      <NotificationsPopover anchorEl={anchorEl} setAnchorEl={setAnchorEl} />
+      {/* <NotificationsPopover anchorEl={anchorEl} setAnchorEl={setAnchorEl} /> */}
     </Box>
   );
 };
