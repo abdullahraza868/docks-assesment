@@ -1,20 +1,9 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardContent,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 
 const history = [
   {
     type: "BTC",
-    name: "Akhirnya Joko bayar Utang",
+    name: "Akhirnya Joko bayar",
     change: "+0.025",
     date: "08/26/2018",
   },
@@ -48,20 +37,20 @@ const HistoryCard = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        background:
-          "linear-gradient(1deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 10%, #17163B 100%)",
+        background: "transparent",
         width: "100%",
         color: "#B1AFCD",
+        boxShadow: "none",
       }}
     >
-      <CardContent sx={{ flexGrow: 1 }}>
+      <CardContent sx={{ flexGrow: 1, padding: 0, pl: 2 }}>
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Typography fontSize="small">HISTORY</Typography>
           <Button sx={{ textTransform: "capitalize" }} size="small">
             See All
           </Button>
         </Box>
-        <Box>
+        <Box mt={2}>
           {history?.map((hist, index) => {
             const isNegChange = hist.change.includes("-");
 
@@ -103,11 +92,6 @@ const HistoryCard = () => {
               </Box>
             );
           })}
-        </Box>
-        <Box sx={{ mt: 2 }}>
-          <Button fullWidth sx={{ textTransform: "capitalize" }}>
-            See All
-          </Button>
         </Box>
       </CardContent>
     </Card>

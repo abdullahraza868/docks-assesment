@@ -87,6 +87,7 @@ const WalletCard = ({ stats }) => {
 
 WalletCard.propTypes = {
   stats: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     value: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     change: PropTypes.string.isRequired,
